@@ -1,9 +1,11 @@
 body{
-    
+    background-color: lightgre
     margin: 0 auto;
     width: 100%;
     height: 100%;
 }
+
+
 
 p{
     text-align: center; 
@@ -18,12 +20,71 @@ p{
 }
 
 h1{
-    font-size: 3em;
+    font-size: 2em;
     color: #df5b57;
     font-family:Bree;
     margin:2em;
     text-align: center;
+    padding-left: 5em;
+    padding-right: 5em;
 }
+
+
+a {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+    margin-left: 28em;
+    
+}
+
+/* Custom */
+a {
+    
+  display: inline-block;
+  position: relative;
+  padding: 20px 38px;
+  top: 0;
+  font-size: 30px;
+  font-family: "Open Sans", Helvetica;
+  border-radius: 4px;
+  border-bottom: 1px solid rgba( 255, 227, 125, 0.5 );
+  background: #df5b57;
+  color: #fff;
+  box-shadow: 0px 0px 0px rgba( 255, 165, 60, 0.1 );
+  
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+          transform: translateZ(0);
+  
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+a:hover {
+  top: -10px;
+  box-shadow: 0px 10px 10px rgba( 255, 165, 60, 0.2 );
+  
+  -webkit-transform: rotateX(20deg);
+     -moz-transform: rotateX(20deg);
+      -ms-transform: rotateX(20deg);
+          transform: rotateX(20deg);
+}
+
+a:active {
+  top: 0px;
+  box-shadow: 0px 0px 0px rgba( 255, 165, 60, 0.0 );
+  background: #fff;
+}
+
+
+
 
 .button {
   background-color: transparent;
@@ -39,6 +100,85 @@ h1{
     position: absolute;
     display:inline-block;
 }
+
+
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    margin-left: -8px;
+
+}
+.bgimg-1 {
+    margin-top: -24px;
+  background-image: url("Images/mainimage_Tekengebied%201.png");
+  min-height: 100%;
+    
+}
+
+.bgimg-2 {
+  background-image: url("Images/worldmap.gif");
+  min-height: 100%;
+}
+
+.bgimg-3 {
+  background-image: url("Images/slaaf.gif");
+  min-height: 100%;
+}
+
+.bgimg-4 {
+  background-image: url("Images/vocship.gif");
+  min-height: 100%;
+}
+
+.bgimg-5 {
+  background-image: url("Images/amsterdamhousebig_Tekengebied%201.png");
+  min-height: 800px;
+}
+
+
+.kleur1
+{color:#77A86F}
+
+.kleur2
+{color:#181919}
+.kleur3
+{color:cornflowerblue;}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+
+
+
+
+  /* Set a specific height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
 
 .button2 {
   background-color:transparent; 
@@ -86,6 +226,15 @@ h1{
 }
 
 
+.image{
+    
+    width:20%;
+    
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
 
 img{
     
@@ -142,10 +291,26 @@ a:hover {
 
 .h3v1{
     
-    top:80em;
+    top:570em;
     
     padding-left:18em;
     padding-right:18em;
+}
+
+
+@keyframes type{
+    
+    0%{
+        
+        width: 0ch;
+    }
+    
+    
+    100%;{
+        
+        
+    }
+    
 }
 
 @keyframes shake {
